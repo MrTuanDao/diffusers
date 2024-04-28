@@ -10,7 +10,7 @@ accelerate launch train_dreambooth.py \
   --pretrained_model_name_or_path=$MODEL_NAME  \
   --instance_data_dir=$INSTANCE_DIR \
   --output_dir=$OUTPUT_DIR \
-  --instance_prompt="nguoideptrainhatthegioi" \
+  --instance_prompt="a photo of nguoideptrainhatthegioi person" \
   --resolution=512 \
   --train_batch_size=1 \
   --gradient_accumulation_steps=1 \
@@ -21,5 +21,5 @@ accelerate launch train_dreambooth.py \
   --push_to_hub \
   --use_8bit_adam \
   --report_to="wandb" \
-  --validation_prompt="a picture of nguoideptrainhatthegioi" \
+  --validation_prompt="a photo of nguoideptrainhatthegioi person" \
   --validation_steps=100
