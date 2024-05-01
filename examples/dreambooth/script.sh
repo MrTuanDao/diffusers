@@ -15,8 +15,9 @@ accelerate launch train_dreambooth.py \
   --learning_rate=5e-6 \
   --lr_scheduler="constant" \
   --lr_warmup_steps=0 \
-  --max_train_steps=4000 \
+  --max_train_steps=400 \
   --push_to_hub \
   --report_to="wandb" \
   --validation_prompt="a photo of SKS person" \
-  --validation_steps=100
+  --validation_steps=100 \
+  --use_8bit_adam
